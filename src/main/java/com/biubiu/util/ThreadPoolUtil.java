@@ -7,7 +7,7 @@ import java.util.concurrent.*;
  */
 public class ThreadPoolUtil {
 
-    private static final int POOL_SIZE = Runtime.getRuntime().availableProcessors();
+    private static final int POOL_SIZE = Runtime.getRuntime().availableProcessors() * 100;
 
     private static final int QUEUE_SIZE = 0x00010000;
 
